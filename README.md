@@ -142,8 +142,8 @@ require("dial.config").augends:register_group{
 }
 
 -- change augends in VISUAL mode
-vim.keymap.set("v", "<C-a>", require("dial.map").inc_visual("visual"), {noremap = true})
-vim.keymap.set("v", "<C-x>", require("dial.map").dec_visual("visual"), {noremap = true})
+vim.keymap.set("v", "<C-a>", require("dial.map").inc_normal("visual"), {noremap = true})
+vim.keymap.set("v", "<C-x>", require("dial.map").dec_normal("visual"), {noremap = true})
 EOF
 
 " enable only for specific FileType
